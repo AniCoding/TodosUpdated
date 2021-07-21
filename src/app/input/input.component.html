@@ -1,0 +1,26 @@
+<div class="button-container">
+  <div class="button">
+    <button (click)="onAdd(newDescription.value,newDueDate.value)">
+      Add Card
+    </button>
+
+
+    <div >
+      <div class>
+     
+
+        <input type="text"
+               placeholder="Description"
+               name="newDescription" #newDescription
+               [(ngModel)] = 'description'
+        > <input type="text"
+                 placeholder="Due Date"
+                 name="newDueDate" #newDueDate
+                 [(ngModel)] = 'dueDate'
+      >
+
+
+      </div>
+    </div>
+  </div>
+</div>

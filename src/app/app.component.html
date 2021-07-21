@@ -1,0 +1,20 @@
+
+<app-input ></app-input>
+<div>
+<app-card
+  class="card-container"
+  *ngFor="let card of cards; let i = index"
+ 
+  [description]="card.description"
+  [dueDate]="card.dueDate"
+  [index]="i"
+></app-card>
+</div>
+
+
+
+
+
+
+
+
